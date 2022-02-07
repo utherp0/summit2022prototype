@@ -1,0 +1,23 @@
+version: 0.19.0
+name: summittest
+namespace: ""
+runtime: quarkus
+registry: ""
+image: quay.io/ilawson/summit2022prototype
+imageDigest: ""
+builder: quay.io/boson/faas-jvm-builder:v0.8.4
+builders:
+  default: quay.io/boson/faas-jvm-builder:v0.8.4
+  jvm: quay.io/boson/faas-jvm-builder:v0.8.4
+  native: quay.io/boson/faas-quarkus-native-builder:v0.8.4
+buildpacks: []
+volumes: []
+buildEnvs: []
+envs: []
+annotations: {}
+options: {}
+labels: []
+healthEndpoints:
+  liveness: /health/liveness
+  readiness: /health/readiness
+created: 2022-02-04T14:56:16.562739441Z
